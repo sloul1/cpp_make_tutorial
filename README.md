@@ -1,17 +1,18 @@
 # Example for compiling C++ code with multiple source files
 
-This C++ code compiling example is also version control exercise of the Tampere University  
-of Applied Sciences included in Bachelor of Engineering studies (Information and  
-Communications Technology).  
+This C++ code compiling example is also version control exercise of the Tampere University 
+of Applied Sciences included in Bachelor of Engineering studies (Information and Communications Technology).  
 
 - When executed program calculates square of given number.  
 
 - Afterwards program is expanded to calculate volume of cube (also known as regular hexahedron) with same user given number.  
 
-Code is created and tested with Ubuntu Workstation 24.04.1 LTS with  
-Visual Studio Code as editor. Install instructions for VS Code can be found at  
+Code is created and tested with Ubuntu Workstation 24.04.1 LTS with 
+Visual Studio Code as editor. Code can be compiled using VS Code's terminal or Ubuntu's own terminal.
+
+VS Code documentation has install instructions for Ubuntu and Debian based distros at:  
 https://code.visualstudio.com/docs/setup/linux#_debian-and-ubuntu-based-distributions  
-or use script that I have created accordingly in a link below.  
+...or you can use script below I have created according to documentation:  
 https://github.com/sloul1/script/blob/main/install-vscode-ubuntu.sh
 
 ## 1. Check your operating system version.
