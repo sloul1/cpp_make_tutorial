@@ -1,0 +1,17 @@
+compute.h
+
+// added cube
+int cube(int);
+
+compute.cpp
+
+// added cube
+int cube(int n) {
+ return n * n * n;
+ }
+
+main.cpp
+
+// added cube (before last return)
+result = cube(n);
+ std::cout << result << std::endl;
