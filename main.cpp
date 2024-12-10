@@ -13,5 +13,8 @@ return 1;
 }
 int result = square(n);
 std::cout << result << std::endl;
+// added cube (before last return)
+result = cube(n);
+ std::cout << result << std::endl;
 return 0;
 }

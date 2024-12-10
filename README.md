@@ -2,17 +2,17 @@
 
 This C++ code compiling example is also version control exercise of the Tampere University  
 of Applied Sciences included in Bachelor of Engineering studies (Information and  
-Communications Technology). When executed program calculates square of given number.  
+Communications Technology).  
 
-Afterwards program is expanded to calculate volume of cube (also known as regular hexahedron) with same user given number.  
+- When executed program calculates square of given number.  
+
+- Afterwards program is expanded to calculate volume of cube (also known as regular hexahedron) with same user given number.  
 
 Code is created and tested with Ubuntu Workstation 24.04.1 LTS with  
 Visual Studio Code as editor. Install instructions for VS Code can be found at  
 https://code.visualstudio.com/docs/setup/linux#_debian-and-ubuntu-based-distributions  
 or use script that I have created accordingly in a link below.  
 https://github.com/sloul1/script/blob/main/install-vscode-ubuntu.sh
-
-Example consist of (how many?) steps.
 
 ## 1. Check your operating system version.
   
@@ -32,13 +32,13 @@ Codename:	noble
 ```
 ## 2. Check and install and dependencies.
 ```shell
-whereis build-essential
+whereis build-essential git
 ```
-If build essential is not installed update repositories' package lists and install build-essential package by:
+If build essential and git are not installed update repositories' package lists and install build-essential and git packages by:
 ```shell
-sudo apt update && sudo apt install build-essential -y
+sudo apt update && sudo apt install build-essential git -y
 ```
-In our example this installs:  
+In our example build-essential packet installs:  
 
 gcc: The GNU Compiler Collection, which compiles C and C++ code.  
 g++: The compiler for C++ programs based on GCC.  
@@ -48,8 +48,13 @@ or
 libc-dev: virtual package provided by libc6-dev  
 
 More info on packages of your Ubuntu version can be found at: https://packages.ubuntu.com/  
-## 3. Run Makefile
-Makefile can be ran by commanding.
+## 3. Clone this repository from https://github.com/sloul1/cpp_make_tutorial.git
+Code:
+```shell
+git clone https://github.com/sloul1/cpp_make_tutorial.git
+```
+## 4. Run Makefile
+Makefile can be ran by commanding:
 ```shell
 make
 ```
@@ -75,4 +80,15 @@ make clean
 Resulting:
 ```shell
 rm -f main.o compute.o main
+```
+## 5. Added code for calculating volume of cube
+Added code for calculating volume of cube can be checked from 'additions' file.  
+After running 'make' again main program calculates also cube volume:
+```shell
+./main 3
+```
+resulting:
+```shell
+9
+27
 ```
