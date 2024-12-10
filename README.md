@@ -86,6 +86,9 @@ rm -f main.o compute.o main
 Added code for calculating volume of cube can be checked from 'additions' file.  
 After running 'make' again main program calculates also cube volume:
 ```shell
+make
+```
+```shell
 ./main 3
 ```
 resulting:
